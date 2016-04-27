@@ -20,5 +20,5 @@
   "scripts": {
     "start": "index.html"
   },
-  "main": "index.html",
+  "main": "index.html"
 }
