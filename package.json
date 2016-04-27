@@ -2,29 +2,20 @@
   "name": "southwestsurfhouse",
   "version": "1.0.0",
   "description": "southwestsurfhouseTemplate.",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-sass": "^2.1.0"
-  },
-  "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sara6/swhouse"
   },
-  "bugs": {
-    "url": "https://github.com/sara6/swhouse",
-    "email": "foundation@zurb.com"
-  },
-  "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
+  "author": "ZURB <foundation@zurb.com>",
   "private": true,
   "dependencies": {
+    "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0"
-  }
+  },
+  "devDependencies": {
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "main": "index.html"
 }
