@@ -1,7 +1,7 @@
 {
-  "name": "foundation-sites-template",
+  "name": "southwestsurfhouse",
   "version": "1.0.0",
-  "description": "Basic template for a new Foundation for Sites project.",
+  "description": "southwestsurfhouseTemplate.",
   "main": "gulpfile.js",
   "devDependencies": {
     "gulp": "^3.9.0",
@@ -15,10 +15,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zurb/foundation-sites-template.git"
+    "url": "https://github.com/sara6/swhouse"
   },
   "bugs": {
-    "url": "https://github.com/zurb/foundation-sites/issues",
+    "url": "https://github.com/sara6/swhouse",
     "email": "foundation@zurb.com"
   },
   "author": "ZURB <foundation@zurb.com>",
