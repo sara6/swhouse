@@ -18,7 +18,7 @@
     "gulp-sass": "^2.1.0"
   },
   "scripts": {
-    "start": "index.html"
+    "start": "gulp open"
   },
   "main": "index.html"
 }
