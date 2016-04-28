@@ -2,6 +2,10 @@
   "name": "southwestsurfhouse",
   "version": "1.0.0",
   "description": "southwestsurfhouseTemplate.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sara6/swhouse"
@@ -10,14 +14,10 @@
   "author": "ZURB <foundation@zurb.com>",
   "private": true,
   "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-open": "latest"
+    "ejs": "latest",
+    "express": "latest"
   },
   "devDependencies": {
     "gulp-sass": "^2.1.0"
-  },
-  "scripts": {
-    "start": "gulp open"
-  },
-  "main": "index.html"
+  }
 }
