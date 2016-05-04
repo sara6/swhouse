@@ -183,3 +183,76 @@ ul, ol, dl {
   width: 75px;
   height: 75px;
 }
+
+
+.centered {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  border-bottom: 2px solid @grayer;
+}
+
+::-webkit-resizer {
+  display: none;
+}
+
+
+body * {
+  outline: none !important;
+}
+
+form#contact {
+  .centered;
+  .bottom-line;
+  width: 600px;
+  padding: 20px;
+  background-color: @white;
+}
+
+.form-control {
+  //.uppercase;
+  box-shadow: none;
+  border-radius: 0;
+  background-color: @white;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  //border-bottom: 1px solid @gray;
+}
+
+textarea#message {
+  min-height: 200px;
+  resize: vertical;
+  overflow: hidden;
+  border-bottom: 0px;
+}
+
+button#send {
+  .uppercase;
+  .bottom-line;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+
+ .fi-telephone {
+   width: 25px;
+   height: 25px;
+ }
+
+ .fi-location {
+   width: 25px;
+   height: 25px;
+ }
+
+ .fi-mail {
+   width: 25px;
+   height: 25px;
+ }

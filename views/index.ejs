@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Southwest Surfhouse France</title>
+  <title>SW Surfhouse</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/custom.css" />
-  
+
   <script src="js/vendor/modernizr.js"></script>
 </head>
 
@@ -31,10 +31,6 @@
         <section class="top-bar-section">
           <!-- Right Nav Section -->
           <ul id="nav" class="right">
-            <li>
-              <a href="#top">Home</a>
-            </li>
-
             <li>
               <a href="#about">About</a>
             </li>
@@ -275,17 +271,22 @@
                     <div class="row">
                       <div class="large-5 columns">
                         <h1>Contact</h1>
+                        <br>
                         <ul>
                           <li>
-                            <i class="fi-telephone"></i> +33 783 5797 68
+                            <img class="fi-telephone" src="img/phone.png" alt="phone icon">+33 783 5797 68
                           </li>
+                          <br>
                           <li>
-                            <i class="fi-home"></i> 10 Route de Saubion<br>40510 Seignosse, France</li>
+                            <img class="fi-location" src="img/location.png" alt="location icon"> 10 Route de Saubion<br>40510 Seignosse, France
+                          </li>
+                          <br>
                             <li>
-                              <i class="fi-mail"></i> surfhostelfrance@gmail.com
+                              <img class="fi-mail" src="img/email.png" alt="email icon"> surfhostelfrance@gmail.com
                             </li>
+                            <br>
                           </ul>
-                          <a href="https://www.instagram.com/surfhostelfrance/">
+                          <a href="https://www.instagram.com/southwestsurfhouse/">
                             <img class="instagram" src="img/insta.png">
                           </a>
                           <a href="https://www.facebook.com/SurfHostel/?fref=ts">
@@ -296,9 +297,27 @@
                           </a>
                         </div>
                         <div class="large-7 columns">
-                          <div class="map">
-                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.4002805955033!2d-1.3619663845013477!3d43.68144107912032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd51509bc45acb69%3A0x27b07018b99eae14!2s10+Route+de+Saubion%2C+40510+Seignosse%2C+France!5e0!3m2!1sen!2suk!4v1460910600319" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                          </div>
+                          <section>
+                            <div class="arrow-up"></div>
+                            <form id="contact" class="form-horizontal" role="form">
+                              <div class="form-group">
+                                <div class="col-sm-12">
+                                  <input id="name" name="name" type="text" placeholder="NAME" class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-12">
+                                  <input id="email" name="email" type="email" placeholder="EMAIL" class="form-control">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <div class="col-sm-12">
+                                  <textarea class="form-control" id="message" name="message" placeholder="MESSAGE"></textarea>
+                                </div>
+                              </div>
+                              <button id="send" name="send" class="btn btn-block">send</button>
+                            </form>
+                          </section>
                         </div>
                       </div>
                     </div>
@@ -307,7 +326,7 @@
                     <div class="row">
                       <div class="large-12 columns">
                         <div class="large-4 pull-1 columns text-center">
-                          <p>&copy; FW design.</p>
+                          <p>&copy; SW Surfhouse.</p>
                         </div>
                       </div>
                     </div>
