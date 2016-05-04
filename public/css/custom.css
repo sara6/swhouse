@@ -229,7 +229,7 @@ form#contact {
 }
 
 textarea#message {
-  min-height: 200px;
+  min-height: 100px;
   resize: vertical;
   overflow: hidden;
   border-bottom: 0px;
