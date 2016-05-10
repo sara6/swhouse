@@ -1,46 +1,46 @@
 .jumbo{
-    background-image: url(../img/jumbo_bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 175px 0;
-    margin-bottom: 30px;
+  background-image: url(../img/jumbo_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 175px 0;
+  margin-bottom: 30px;
 }
 
 .jumbo h1{
-    color: #fff;
-    text-align: center;
-    margin-bottom: 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 .contain-to-grid, .top-bar{
-    background: #eaeaea;
+  background: #eaeaea;
 }
 
 .name{
-    background: #5a9aa8;
-    padding: 5px 30px;
-    height: 60px !important;
+  background: #5a9aa8;
+  padding: 5px 30px;
+  height: 60px !important;
 }
 
 .top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button){
-    background: none;
+  background: none;
 
 }
 
 .top-bar-section li:not(.has-form) a:hover:not(.button){
-    background: none;
-    text-decoration: underline;
-    color: #1a1a1a;
+  background: none;
+  text-decoration: underline;
+  color: #1a1a1a;
 
 }
 
 .top-bar-section ul li > a{
-    color: #1a1a1a;
+  color: #1a1a1a;
 }
 
 .active{
-    text-decoration: underline;
-    font-weight: bold !important;
+  text-decoration: underline;
+  font-weight: bold !important;
 }
 
 .row:before {
@@ -53,82 +53,192 @@
 }
 
 section{
-    padding-bottom: 150px;
+  padding-bottom: 150px;
 }
 #contact{
-    background: #fff;
-    padding-bottom: 30px;
+  background: #fff;
+  padding-bottom: 30px;
 }
 
 #contact li>ul>li{
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 
 .copy{
-    background: #737373;
-    padding: 10px 0;
+  background: #737373;
+  padding: 10px 0;
 }
 
 .copy p{
-    color: #fff;
-    margin-bottom: 0;
+  color: #fff;
+  margin-bottom: 0;
 }
 
 .copy a{
-    color: #fff;
+  color: #fff;
 }
 
 ul, ol, dl {
-    list-style: none;
+  list-style: none;
 }
 
 .th{
-    border: none;
+  border: none;
 }
 #portfolio{
-    background-image: url(../img/port_bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(../img/port_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 
 }
 #portfolio h2,h4{
-    color: #fff;
-    text-align: center;;
+  color: #fff;
+  text-align: center;;
 }
 
 #portfolio h4{
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #portfolio img, #about img{
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
-.enlarge:hover {
-	transform:scale(2,2);
-	transform-origin:0 0;
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.slides {
+  padding: 0;
+  width: 809px;
+  height: 620px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
 }
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+  top: 0;
+  opacity: 0;
+  width: 809px;
+  height: 620px;
+  display: block;
+  position: absolute;
+
+  transform: scale(0);
+
+  transition: all .7s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav label {
+  width: 200px;
+  height: 100%;
+  display: none;
+  position: absolute;
+
+  opacity: 0;
+  z-index: 9;
+  cursor: pointer;
+
+  transition: opacity .2s;
+
+  color: #FFF;
+  font-size: 156pt;
+  text-align: center;
+  line-height: 380px;
+  font-family: "Varela Round", sans-serif;
+  background-color: rgba(255, 255, 255, .3);
+  text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+  opacity: 1;
+
+  transform: scale(1);
+
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 
 #yoga{
-    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../img/yoga1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url("../img/yoga1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #yoga h2,h4{
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 #yoga h4{
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #yoga img, #about img{
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 #yoga div{
@@ -161,9 +271,9 @@ ul, ol, dl {
 }
 
 #contact{
-    background-image: url("../img/boardf.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("../img/boardf.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .instagram {
@@ -242,17 +352,17 @@ button#send {
   letter-spacing: 4px;
 }
 
- .fi-telephone {
-   width: 25px;
-   height: 25px;
- }
+.fi-telephone {
+  width: 25px;
+  height: 25px;
+}
 
- .fi-location {
-   width: 25px;
-   height: 25px;
- }
+.fi-location {
+  width: 25px;
+  height: 25px;
+}
 
- .fi-mail {
-   width: 25px;
-   height: 25px;
- }
+.fi-mail {
+  width: 25px;
+  height: 25px;
+}
