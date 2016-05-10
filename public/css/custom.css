@@ -141,7 +141,7 @@ ul, ol, dl {
 
   transform: scale(0);
 
-  transition: all .7s ease-in-out;
+  transition: all .0s ease-in-out;
 }
 
 .slide img {
@@ -159,7 +159,7 @@ ul, ol, dl {
   z-index: 9;
   cursor: pointer;
 
-  transition: opacity .2s;
+  transition: opacity .1s;
 
   color: #FFF;
   font-size: 156pt;
@@ -181,7 +181,7 @@ input:checked + .slide-container  .slide {
 
   transform: scale(1);
 
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0s ease-in-out;
 }
 
 input:checked + .slide-container .nav label { display: block; }
