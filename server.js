@@ -1,5 +1,15 @@
 var express = require('express');
+var nodemailer = require('nodemailer');
 var app = express();
+
+//transport obj to send an email
+// var smtpTransport = nodemailer.createTransport("SMTP", {
+// 	service: "Gmail",
+// 	auth: {
+// 		user: "",
+// 		pass: "",
+// 	}
+// });
 
 // set the port of our application
 // process.env.PORT lets the port be set by Heroku
