@@ -3,13 +3,19 @@ var nodemailer = require('nodemailer');
 var smtpTransport = nodemailer.createTransport("SMTP", {
   service: "Gmail",
   auth: {
-    XOAuth2: {
+    user: '',
+    pass: ''
+  }
+/*
+  auth: {
+    //XOAuth2: {
       user: "your_email_address@gmail.com",             
       clientId: "your_client_id",
       clientSecret: "your_client_secret",
       refreshToken: "your_refresh_token"
     }
   }
+  */
 });
 
 var mailOptions = {
