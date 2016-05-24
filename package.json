@@ -14,6 +14,8 @@
   "author": "ZURB <foundation@zurb.com>",
   "private": true,
   "dependencies": {
+    "nodemailer": "0.7.1",
+    "xoauth2": "latest",
     "ejs": "latest",
     "express": "latest"
   },
